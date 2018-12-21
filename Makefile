@@ -42,6 +42,9 @@ $(OBJS_PATH)/%.o : ./src/%.c
 clean: 
 	-rm -rf $(OBJS_PATH) $(TARGET)
 
+lib:
+	yum install -y json-c-devel
+
 install:
 	cp tts /usr/local/bin
 
